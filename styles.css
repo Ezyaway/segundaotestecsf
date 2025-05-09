@@ -144,9 +144,10 @@ header {
 }
 
 .tiger-logo {
-    width: 1440px;
-    height: 800px;
-    margin-bottom: 10px;
+    width: calc(100% - 100px); 
+    height: auto; 
+    margin: 0 50px 10px 50px; 
+    display: block;
 }
 
 .tiger-logo-small {
