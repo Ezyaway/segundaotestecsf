@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundão Domínio 2025</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="navbar-logo">
+                        <img src="SegLtbg.png" class="tiger-logo-small">
+                        <span>SEGUNDÃO</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/segundaoocsf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://csfba.com.br/app/" target="_blank"><img src="csf3.png" class="nav-icon" alt="Ícone do colégio"> Site do colégio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.tiktok.com/@segundaoocsf?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.tiktok.com/@segundaoocsf?is_from_webapp=1&sender_device=pc" target="_blank"><img src="coc.png" class="nav-icon" alt="Ícone do colégio"> Portal COC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header with Logo -->
+        <header class="text-center py-4 mt-5">
+            <div class="logo-container">
+                <img src="SegLHZL2.png" class="tiger-logo">
+            </div>
+            <div class="welcome-text mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p id="welcome-message" class="mb-0">Bem-vindos à página da turma do segundão do CSF! Aqui você encontrará todas as informações importantes sobre trabalhos, provas e atividades da turma.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Tab Navigation -->
+        <nav class="tab-navigation">
+            <div class="nav-container">
+                <div class="nav-label">Abas Principais:</div>
+                <ul class="nav nav-pills mb-3" id="main-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                            <i class="fas fa-home"></i> Principal
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="trabalhos-tab" data-bs-toggle="pill" data-bs-target="#trabalhos" type="button" role="tab" aria-controls="trabalhos" aria-selected="false">
+                            <i class="fas fa-tasks"></i> Trabalhos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="provas-tab" data-bs-toggle="pill" data-bs-target="#provas" type="button" role="tab" aria-controls="provas" aria-selected="false">
+                            <i class="fas fa-file-alt"></i> Provas
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="atualidades-tab" data-bs-toggle="pill" data-bs-target="#atualidades" type="button" role="tab" aria-controls="atualidades" aria-selected="false">
+                            <i class="fas fa-newspaper"></i> Atualidades
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="noticias-tab" data-bs-toggle="pill" data-bs-target="#noticias" type="button" role="tab" aria-controls="noticias" aria-selected="false">
+                            <i class="fas fa-bell"></i> Notícias
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="alunos-tab" data-bs-toggle="pill" data-bs-target="#alunos" type="button" role="tab" aria-controls="alunos" aria-selected="false">
+                            <i class="fas fa-user-friends"></i> Alunos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="horarios-tab" data-bs-toggle="pill" data-bs-target="#horarios" type="button" role="tab" aria-controls="horarios" aria-selected="false">
+                            <i class="fas fa-clock"></i> Horários
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="calendario-tab" data-bs-toggle="pill" data-bs-target="#calendario" type="button" role="tab" aria-controls="calendario" aria-selected="false">
+                            <i class="fas fa-calendar-alt"></i> Calendário
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Home Tab -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="home-content">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5><i class="fas fa-bullhorn"></i> Avisos Importantes</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="alert alert-info">
+                                            <strong>Próximas Provas:</strong> 14/05 - Português e Física
+                                        </div>
+                                        <div class="alert alert-warning">
+                                            <strong>Mudança de datas:</strong> A prova do dia 10/05 foi passada para o dia 14//05
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5><i class="fas fa-calendar-check"></i> Próximos Eventos</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Nnhum evento marcado!
+                                                <span class="badge bg-primary rounded-pill">XX/XX</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5><i class="fas fa-star"></i> Destaques</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Aniersário de fulano! tudo de bom para você!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trabalhos Tab -->
+            <div class="tab-pane fade" id="trabalhos" role="tabpanel" aria-labelledby="trabalhos-tab">
+                <div class="container">
+                    <div class="accordion" id="accordionTrabalhos">
+                        <!-- Formação Geral Básica -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFormacaoGeral">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFormacaoGeral" aria-expanded="true" aria-controls="collapseFormacaoGeral">
+                                    <i class="fas fa-book me-2"></i> Formação Geral Básica
+                                </button>
+                            </h2>
+                            <div id="collapseFormacaoGeral" class="accordion-collapse collapse show" aria-labelledby="headingFormacaoGeral" data-bs-parent="#accordionTrabalhos">
+                                <div class="accordion-body">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Relatório de física</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Matéria: Física</h6>
+                                            <p class="card-text">Anpalise dos experimentos realizados em sala de aula.</p>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="badge bg-info">Relatório</span>
+                                                <span class="badge bg-danger">Entrega: 26/05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Entrega dos eletroscópios</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Matéria: Física</h6>
+                                            <p class="card-text">Entrega do eletroscópio solicitado pelo professor Anderson.</p>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="badge bg-info">Projeto prático</span>
+                                                <span class="badge bg-danger">Entrega: 26/05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Itinerário de Exatas -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingExatas">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExatas" aria-expanded="false" aria-controls="collapseExatas">
+                                    <i class="fas fa-calculator me-2"></i> Itinerário de Exatas
+                                </button>
+                            </h2>
+                            <div id="collapseExatas" class="accordion-collapse collapse" aria-labelledby="headingExatas" data-bs-parent="#accordionTrabalhos">
+                                <div class="accordion-body">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ciclo Trigonométrico</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Matéria: Arte de morar</h6>
+                                            <p class="card-text">Construção de um ciclo trigonométrico supervisionado pela professora Thaiane.</p>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="badge bg-info">Projeto Prático</span>
+                                                <span class="badge bg-danger">Confecção: 13/05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Itinerário de Humanas -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingHumanas">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHumanas" aria-expanded="false" aria-controls="collapseHumanas">
+                                    <i class="fas fa-landmark me-2"></i> Itinerário de Humanas
+                                </button>
+                            </h2>
+                            <div id="collapseHumanas" class="accordion-collapse collapse" aria-labelledby="headingHumanas" data-bs-parent="#accordionTrabalhos">
+                                <div class="accordion-body">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Nenhum trabalho pendente!</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Matéria: Literatura dos Meus Ancestrais</h6>
+                                            <p class="card-text">!</p>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="badge bg-info">XX</span>
+                                                <span class="badge bg-danger">Apresentação: XX/XX</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Provas Tab -->
+            <div class="tab-pane fade" id="provas" role="tabpanel" aria-labelledby="provas-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Primeira Prova da Semana -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">1ª AV 1 - PORTUGUÊS + FÍSICA (14/05)</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="exam-info">
+                                        <h6 class="text-primary">Português:</h6>
+                                        <ul class="list-group list-group-flush mb-3">
+                                            <li class="list-group-item">
+                                                <strong>Livro 10:</strong> Formação Geral Básica
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Capítulo 23:</strong> Do Trovadorismo ao Naturalismo
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Páginas:</strong> 153-162
+                                            </li>
+                                        </ul>
+                                        
+                                        <h6 class="text-primary">Física:</h6>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <strong>Livro 11 e 12:</strong> Formação Geral Básica
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Capítulo 15 e 16:</strong> Eletrostática (parte 1 e 2)
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Páginas:</strong> Não especificadas
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Livro 12:</strong> Itinerário Formativo
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Capítulo 13:</strong> Eletrostática (parte 1)
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Páginas:</strong> 28-34 e 40-41
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Observações:</strong> Estudar pelo caderno e pela leitura sa parte teórica no livro
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="badge bg-success">Prova Padrão</span>
+                                        <span class="badge bg-info">Atualidade: DANIELE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <!-- Segunda Prova da Semana -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">1ª AV 2 - BIOLOGIA + QUÍMICA (17/05)</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="exam-info">
+                                        <h6 class="text-primary">Biologia:</h6>
+                                        <ul class="list-group list-group-flush mb-3">
+                                            <li class="list-group-item">
+                                                <strong>Livro X:</strong> Formação Geral Básica
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Capítulo X:</strong> X
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Páginas:</strong> X
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Observações:</strong> faz o L
+                                            </li>
+                                        </ul>
+                                        
+                                        <h6 class="text-primary">Física:</h6>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <strong>Livro X:</strong> Formação Geral Básica
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Capítulo X:</strong> X
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Páginas:</strong> X
+                                            </li>
+                                            <li class="list-group-item">
+                                                <strong>Observações:</strong> X
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="badge bg-success">Prova Padrão</span>
+                                        <span class="badge bg-info">Atualidade: ANTONIO JR</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Calendário de Provas -->
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Calendário de Provas - 2ª Unidade</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-striped mb-0">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>DATA</th>
+                                            <th>AVALIAÇÃO</th>
+                                            <th>ATUALIDADES</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>16/04</td>
+                                            <td>1ª AVALIAÇÃO NACIONAL</td>
+                                            <td>XXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26/04</td>
+                                            <td>1ª AV 1 - MATEMÁTICA + INGLÊS</td>
+                                            <td>AUGUSTO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14/05*</td>
+                                            <td>1ª AV 2 - PORTUGUÊS + FÍSICA</td>
+                                            <td>DANIELE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/05</td>
+                                            <td>1ª AV 3 - BIOLOGIA + QUÍMICA</td>
+                                            <td>ANTONIO JR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24/05</td>
+                                            <td>1ª AV 4 - HISTÓRIA + GEOGRAFIA</td>
+                                            <td>LUCIANA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>31/05</td>
+                                            <td>2ª AV 1 - MATEMÁTICA + INGLÊS</td>
+                                            <td>ALAN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/06</td>
+                                            <td>2ª AV 2 - PORTUGUÊS + FÍSICA</td>
+                                            <td>ANDERSON</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/06</td>
+                                            <td>2ª AVALIAÇÃO NACIONAL</td>
+                                            <td>XXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12/06*</td>
+                                            <td>2ª AV 3 - BIOLOGIA + QUÍMICA</td>
+                                            <td>LIS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18/06**</td>
+                                            <td>2ª AV 4 - HISTÓRIA + GEOGRAFIA</td>
+                                            <td>EDNALDO</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atualidades Tab -->
+            <div class="tab-pane fade" id="atualidades" role="tabpanel" aria-labelledby="atualidades-tab">
+                <div class="container">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Atualidade da Semana: Estudos indicam redução de massa cerebral por uso excessivo de tela</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="atualidade-info mb-3">
+                                <span class="badge bg-primary mb-2">Matéria: Português</span>
+                                <h6>Responsáveis: Daniele</h6>
+                            </div>
+                            <div class="atualidade-content">
+                                <p>Consumo compulsivo de conteúdos de baixa qualidade está associado a redução no volume de massa cinzenta em regiões do cérebro responsáveis por tomada de decisões, apontam estudos.<br><br>
+                Embora possa parecer exagerado à primeira vista, o termo "cérebro podre" ou "podridão cerebral", da expressão em inglês "brain rot", pode ser mais literal do que pensamos. Eleita a palavra do ano de 2024 pelo Dicionário Oxford por mais de 37 mil pessoas, o termo descreve, de acordo com a Oxford University Press, a deterioração mental causada pelo consumo excessivo de conteúdo superficial, especialmente na internet. As citações ao termo em inglês aumentaram 230% entre 2023 e 2024, refletindo uma preocupação social crescente com esse fenômeno.<br>
+                Assim, o que começou como uma expressão coloquial encontrou apoio na ciência. Pesquisas citadas pelo jornal britânico The Guardian indicam que o uso excessivo de mídias sociais e o consumo compulsivo de conteúdo de baixa qualidade – como notícias sensacionalistas, teorias da conspiração e entretenimento vazio – podem literalmente encolher a massa cinzenta, diminuir a capacidade de atenção e enfraquecer a memória. Uma combinação de efeitos que faz com que o termo "podridão" não pareça exagerado.<br><br>
+                <h5>Do e-mail à rolagem infinita</h5><br>
+                Os primeiros sinais de alarme soaram no início do século com algo que hoje nos parece inofensivo: o e-mail. Como o jornal El País noticiou recentemente, citando um artigo do Guardian de 2005, uma equipe da Universidade de Londres, após 80 testes clínicos, descobriu que o uso diário de e-mail e telefone celular causava uma queda média de dez pontos no QI dos participantes, um impacto que eles descreveram como mais prejudicial do que o uso de maconha.<br>
+                Imagine então o que acontece agora com a constante enxurrada de tweets, stories, reels, notificações, pushes e fluxos intermináveis de conteúdo.<br>
+                Os aplicativos modernos são projetados especificamente para nos manter viciados, aproveitando o que Michoel Moshel, pesquisador da Universidade Macquarie, descreveu ao El País como "a tendência natural do nosso cérebro de buscar novidades, especialmente quando se trata de informações potencialmente prejudiciais ou alarmantes, uma característica que já nos ajudou a sobreviver".<br><br>
+                <h5>Mudanças cerebrais preoculpantes</h5><br>
+                Em geral, o quadro atual é preocupante. Uma meta-análise de 27 estudos de neuroimagem revelou que o uso excessivo de internet está associado a uma redução no volume de massa cinzenta em regiões críticas do cérebro responsáveis pelo processamento de recompensas, controle de impulsos e tomada de decisões. De acordo com Moshel, essas alterações são semelhantes às observadas em casos de dependência de substâncias como metanfetaminas e álcool.<br>
+                Além do ambiente clínico, o "uso desordenado de tela" tem sido estudado em ambientes educacionais. Uma meta-análise citada em um artigo do The Conversation, do qual Moshel é um dos autores, lista 34 estudos que vinculam o uso compulsivo a um desempenho cognitivo significativamente inferior, especialmente no que diz respeito a atenção sustentada e controle de impulsos. O problema, de acordo com o relatório, não se limita aos mais jovens; ele também afeta adultos que passam muitas horas na frente de celulares e computadores.<br>
+                <strong>Ainda assim, o problema é particularmente grave entre os jovens. De acordo com dados de 2021 da ONG americana Common Sense Media citados no The Conversation, pré-adolescentes passam 5 horas e 33 minutos por dia em frente às telas, enquanto esse tempo é de 8 horas e 39 minutos para adolescentes.</strong><br>
+                Na Austrália, por exemplo, uma pesquisa realizada em 2020 pelo Instituto Gonski da UNSW revelou que 84% dos educadores consideram tecnologias digitais uma distração na sala de aula. De acordo com uma pesquisa da organização australiana especializada em saúde mental Beyond Blue, citada pela emissora americana ABC, o tempo excessivo de tela está entre os principais desafios para os jovens, perdendo apenas para problemas de saúde mental.<br><br>
+                <h5>Ciírculo vicioso da era digital</h5><br>
+                Eduardo Fernández Jiménez, psicólogo clínico do Hospital La Paz, em Madri, explicou ao El País que o cérebro ativa diferentes redes neurais para gerenciar diferentes tipos de atenção. O bombardeio constante de estímulos variáveis afeta particularmente nossa capacidade de atenção sustentada, que é fundamental para o aprendizado acadêmico.<br>
+                O problema é agravado por um círculo vicioso difícil de romper: de acordo com um estudo publicado na revista Nature, pessoas com saúde mental debilitada têm maior probabilidade de consumir conteúdo de baixa qualidade, o que, por sua vez, piora seus sintomas. E quanto mais tempo se passa em frente à tela, mais difícil é reconhecer e limitar o problema.<br><br>
+                <h5>Existe uma solução?</h5><br>
+                Especialistas recomendam uma abordagem em duas frentes: qualidade e quantidade. É fundamental estabelecer limites claros para o tempo de tela e fazer um esforço consciente para se desligar. Atividades que exigem presença física, como esportes ou reuniões com amigos, são essenciais para neutralizar os efeitos negativos do uso prolongado da tela, recomendou o psicólogo Carlos Losada em dezembro ao El País.<br>
+                Também é importante dar prioridade a conteúdos educativos que evitem características viciantes e estabelecer intervalos regulares. Porque, como sugere a pesquisa, o "cérebro podre" pode ser mais do que uma metáfora, mas um processo real de deterioração cognitiva causada por nossos hábitos digitais.<br>
+                Com as empresas de tecnologia projetando algoritmos para maximizar nosso tempo de tela e um público cada vez mais digitalizado, o desafio vai além do indivíduo. É preciso políticas públicas que incentivem a transparência e a educação digital crítica.<br>
+                A ironia é que essa "podridão cerebral" pode estar alterando a forma como percebemos e respondemos ao mundo justamente quando mais precisamos de nossas capacidades cognitivas. Talvez seja hora de lembrar que existe um mundo além da tela, um mundo que nossos cérebros foram realmente projetados para explorar.<br>
+            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notícias Tab -->
+            <div class="tab-pane fade" id="noticias" role="tabpanel" aria-labelledby="noticias-tab">
+                <div class="container">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-newspaper me-2"></i> Últimas Notícias</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Despedida a pró Luciana</h5>
+                                        <small class="text-muted">06/05</small>
+                                    </div>
+                                    <p class="mb-1">Durante a primeira aula do itinerário fomos recebidos com a surpresa de que a professora Luciana Leite sairia do colégio e tiramos uma foto juntos para representar todo nosso tempo juntos. Sentiremos sua falta pró </p>
+                                    <img src="desp.jpg" alt="Despedida a Luciana"><br>
+                                    <small class="text-primary">Prof. Thaiane</small>
+                                </div>
+                                
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Congresso com tema ecológico!</h5>
+                                        <small class="text-muted">11/04</small>
+                                    </div>
+                                    <p class="mb-1">Durante a aula de Projeto de Vida foi realizado um congresso no auditório, tendo o 1°b como plateia. O congressosfoi realizado entre diferentes cidades, sendo elas: Salvador, Aracaju, Feira de santana, Fortaleza e Maringá. O congresso teve como foco o tema da Campanha da Fraternidade de 2025, (Fraternidade e Ecologia Integral).</p>
+                                    <small class="text-primary">Profa. Vitor</small>
+                                </div>
+                                
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Vencemos as eleições!!</h5>
+                                        <small class="text-muted">17/03</small>
+                                    </div>
+                                    <p class="mb-1">Logo após o intervalo do ensino médio, ocorreu o anúncio de quem venceu as eleições de sala, e no nosso segundão os vencedores foram Eri e Giulia! Que essa vitória nos abra muitas portas no futuro.</p>
+                                    <small class="text-primary">Intervalo</small>
+                                </div>
+                                
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Início das votações de lider e vice-lider da sala.</h5>
+                                        <small class="text-muted">11/03</small>
+                                    </div>
+                                    <p class="mb-1">Durante as aulas de Ed.Física e históra, a instrutora Rita nos apresentou ao "sistema de liderança" da sala. Eri Costa e Giulia Sampaio se elegeram!!</p>
+                                    <small class="text-primary">prof. Deraco e prof. Ednaldo</small>
+                                </div>
+                                
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Piquenique Temático na Aula de Química</h5>
+                                        <small class="text-muted">18/03</small>
+                                    </div>
+                                    <p class="mb-1">Nós alunos, fizemos um piquenique temático do atual assunto de química! Instruido pela professora Lis Beltrão.</p>
+                                    <img src="pqnq.png" alt="Piquenique Temático"><br>
+                                    <small class="text-primary">rof. Lis Beltrão</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alunos Tab -->
+            <div class="tab-pane fade" id="alunos" role="tabpanel" aria-labelledby="alunos-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-user-friends me-2"></i> Diretório de Alunos</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Nome</th>
+                                                    <th>Frase</th>
+                                                    <th>Especialização</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="student-avatar bg-primary text-white">
+                                                                <i class="fas fa-user"></i>
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <p class="fw-bold mb-1">Ex1</p>
+                                                                <p class="text-muted mb-0">Algo aq tbm</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>"Frase zika"</td>
+                                                    <td>dá pra por algo aqui</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="student-avatar bg-primary text-white">
+                                                                <i class="fas fa-user"></i>
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <p class="fw-bold mb-1">Ex1</p>
+                                                                <p class="text-muted mb-0">Algo aq tbm</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>"Frase zika"</td>
+                                                    <td>dá pra por algo aqui</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="student-avatar bg-primary text-white">
+                                                                <i class="fas fa-user"></i>
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <p class="fw-bold mb-1">Ex1</p>
+                                                                <p class="text-muted mb-0">Algo aq tbm</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>"Frase zika"</td>
+                                                    <td>dá pra por algo aqui</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="student-avatar bg-primary text-white">
+                                                                <i class="fas fa-user"></i>
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <p class="fw-bold mb-1">Ex1</p>
+                                                                <p class="text-muted mb-0">Algo aq tbm</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>"Frase zika"</td>
+                                                    <td>dá pra por algo aqui</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horários Tab -->
+            <div class="tab-pane fade" id="horarios" role="tabpanel" aria-labelledby="horarios-tab">
+                <div class="container">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-clock me-2"></i> Horário de Aulas</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped mb-0">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>SEGUNDA</th>
+                                            <th>TERÇA</th>
+                                            <th>QUARTA</th>
+                                            <th>QUINTA</th>
+                                            <th>SEXTA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>07:00 / 07:50</td>
+                                            <td>Itinerário</td>
+                                            <td>Itinerário</td>
+                                            <td>Língua Portuguesa</td>
+                                            <td>Física do Cotidiano II</td>
+                                            <td>Língua Inglesa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07:50 / 08:40</td>
+                                            <td>Sociologia</td>
+                                            <td>Química</td>
+                                            <td>Língua Portuguesa</td>
+                                            <td>Matemática</td>
+                                            <td>Física</td>
+                                        </tr>
+                                        <tr>
+                                            <td>08:40 / 09:30</td>
+                                            <td>Física</td>
+                                            <td>Química</td>
+                                            <td>Filosofia</td>
+                                            <td>Geografia</td>
+                                            <td>Oficina de Prod. Textual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:30 / 10:20</td>
+                                            <td>História</td>
+                                            <td>Educação Física</td>
+                                            <td>Matemática</td>
+                                            <td>Matemática</td>
+                                            <td>Projeto de Vida</td>
+                                        </tr>
+                                        <tr class="table-info">
+                                            <td>10:20 / 10:40</td>
+                                            <td colspan="5" class="text-center">INTERVALO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10:40 / 11:30</td>
+                                            <td>Educação Física</td>
+                                            <td>História</td>
+                                            <td>Geografia</td>
+                                            <td>Matemática</td>
+                                            <td>Língua Inglesa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11:30 / 12:20</td>
+                                            <td>Itinerário</td>
+                                            <td>Itinerário</td>
+                                            <td>Oficina de Prod. Textual</td>
+                                            <td>Arte</td>
+                                            <td>Física do Cotidiano II</td>
+                                        </tr>
+                                        <tr class="table-secondary">
+                                            <td colspan="6" class="text-center fw-bold">VESPERTINO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13:00 / 13:50</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13:50 / 14:40</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                            <td>Itinerário</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14:40 / 15:30</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                            <td>Itinerário</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                        </tr>
+                                        <tr class="table-info">
+                                            <td>15:30 / 15:50</td>
+                                            <td colspan="5" class="text-center">INTERVALO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15:50 / 16:40</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                            <td>Biologia</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16:40 / 17:30</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                            <td>Biologia</td>
+                                            <td>------</td>
+                                            <td>------</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendário Tab -->
+            <div class="tab-pane fade" id="calendario" role="tabpanel" aria-labelledby="calendario-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-calendar-alt me-2"></i> Calendário de Provas - 1º Bimestre</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped mb-0">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>DATA</th>
+                                                    <th>AVALIAÇÃO</th>
+                                                    <th>ATUALIDADES</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                            <td>16/04</td>
+                                            <td>1ª AVALIAÇÃO NACIONAL</td>
+                                            <td>XXX</td>
+                                                </tr>
+                                                <tr>
+                                            <td>26/04</td>
+                                            <td>1ª AV 1 - MATEMÁTICA + INGLÊS</td>
+                                            <td>AUGUSTO</td>
+                                                </tr>
+                                                <tr>
+                                            <td>14/05*</td>
+                                            <td>1ª AV 2 - PORTUGUÊS + FÍSICA</td>
+                                            <td>DANIELE</td>
+                                                </tr>
+                                                <tr>
+                                            <td>17/05</td>
+                                            <td>1ª AV 3 - BIOLOGIA + QUÍMICA</td>
+                                            <td>ANTONIO JR</td>
+                                                </tr>
+                                                <tr>
+                                            <td>24/05</td>
+                                            <td>1ª AV 4 - HISTÓRIA + GEOGRAFIA</td>
+                                            <td>LUCIANA</td>
+                                                </tr>
+                                                <tr>
+                                            <td>31/05</td>
+                                            <td>2ª AV 1 - MATEMÁTICA + INGLÊS</td>
+                                            <td>ALAN</td>
+                                               </tr>
+                                               <tr>
+                                            <td>07/06</td>
+                                            <td>2ª AV 2 - PORTUGUÊS + FÍSICA</td>
+                                            <td>ANDERSON</td>
+                                                </tr>
+                                                <tr>
+                                            <td>11/06</td>
+                                            <td>2ª AVALIAÇÃO NACIONAL</td>
+                                            <td>XXX</td>
+                                                </tr>
+                                                <tr>
+                                            <td>12/06*</td>
+                                            <td>2ª AV 3 - BIOLOGIA + QUÍMICA</td>
+                                            <td>LIS</td>
+                                                </tr>
+                                                <tr>
+                                            <td>18/06**</td>
+                                            <td>2ª AV 4 - HISTÓRIA + GEOGRAFIA</td>
+                                            <td>EDNALDO</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-calendar-check me-2"></i> Eventos Importantes</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="mb-0">Feira de Ciências</h6>
+                                                <small class="text-muted">Apresentação de projetos científicos</small>
+                                            </div>
+                                            <span class="badge bg-primary rounded-pill">15/03</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="mb-0">Viagem de Campo - Geografia</h6>
+                                                <small class="text-muted">Estudo de campo em área de preservação</small>
+                                            </div>
+                                            <span class="badge bg-primary rounded-pill">22/03</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="mb-0">Semana Cultural</h6>
+                                                <small class="text-muted">Apresentações artísticas e culturais</small>
+                                            </div>
+                                            <span class="badge bg-primary rounded-pill">03-07/04</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="mb-0">Conselho de Classe</h6>
+                                                <small class="text-muted">Avaliação do desempenho dos alunos</small>
+                                            </div>
+                                            <span class="badge bg-primary rounded-pill">14/04</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="mb-0">Entrega de Boletins</h6>
+                                                <small class="text-muted">Resultados do 1º Bimestre</small>
+                                            </div>
+                                            <span class="badge bg-primary rounded-pill">21/04</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-clock me-2"></i> Datas de Recuperação</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="alert alert-info">
+                                        <p class="mb-0">As provas de recuperação do 1º Bimestre acontecerão entre os dias 24 e 28 de abril.</p>
+                                    </div>
+                                    <p>Alunos que precisarem fazer recuperação devem procurar seus professores para orientações sobre o conteúdo a ser estudado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
