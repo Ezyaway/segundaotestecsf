@@ -142,7 +142,7 @@ header {
     justify-content: center;
     width: 100%;
 }
-.seilaporra {
+.tiger-logo {
     width: calc(100% - 100px); /* 50px de margem de cada lado */
     height: auto; /* Mantém a proporção original */
     margin: 0 50px 10px 50px; /* 50px de margem lateral, 10px abaixo */
@@ -277,7 +277,7 @@ footer {
     height: 800; 
     margin: 0 50px 10px 50px; 
     display: block;
-}
+    }
     
     .nav-pills .nav-link {
         font-size: 0.8rem;
