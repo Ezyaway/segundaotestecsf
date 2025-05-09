@@ -144,12 +144,7 @@ header {
     width: 100%;
 }
 
-.tiger-logo {
-    width: 1440; 
-    height: 800; 
-    margin: 0 50px 10px 50px; 
-    display: block;
-}
+
 
 .tiger-logo-small {
     width: 30px;
@@ -273,6 +268,12 @@ footer {
     .logo-text {
         font-size: 1.5rem;
     }
+    .tiger-logo {
+    width: 1440; 
+    height: 800; 
+    margin: 0 50px 10px 50px; 
+    display: block;
+}
     
     .nav-pills .nav-link {
         font-size: 0.8rem;
